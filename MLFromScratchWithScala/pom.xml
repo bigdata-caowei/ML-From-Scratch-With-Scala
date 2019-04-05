@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.scatch.ml</groupId>
+    <artifactId>ML-From-Scratch-With-Scala</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>SupervisedLearning</module>
+        <module>Common</module>
+    </modules>
+
+    <properties>
+        <fastjson.version>1.2.36</fastjson.version>
+        <commons.io.version>2.4</commons.io.version>
+        <slf4j.version>1.7.10</slf4j.version>
+        <log4j.version>1.2.17</log4j.version>
+        <log4j.adaptor.version>1.7.2</log4j.adaptor.version>
+        <breeze.version>0.12</breeze.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!--本项目模块依赖-->
+            <dependency>
+                <groupId>com.scatch.ml</groupId>
+                <artifactId>Common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- 第三方jar包-->
+
+            <!-- scala数值计算库 -->
+            <dependency>
+                <groupId>org.scalanlp</groupId>
+                <artifactId>breeze_2.11</artifactId>
+                <version>${breeze.version}</version>
+            </dependency>
+
+            <!-- scala绘图库 -->
+            <dependency>
+                <groupId>org.scalanlp</groupId>
+                <artifactId>breeze-viz_2.11</artifactId>
+                <version>${breeze.version}</version>
+            </dependency>
+
+            <!-- json工具包 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <!-- io工具类 -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons.io.version}</version>
+            </dependency>
+
+            <!-- 日志API接口组件 -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+
+            <!-- log4j日志组件 -->
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+
+            <!-- log4j日志组件的日志门面适配器 -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${log4j.adaptor.version}</version>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
+
+</project>
