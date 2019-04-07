@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>ML-From-Scratch-With-Scala</artifactId>
-        <groupId>com.scatch.ml</groupId>
+        <groupId>com.scratch.ml</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -12,17 +12,26 @@
     <artifactId>Supervised-Learning</artifactId>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.scalanlp/breeze -->
+        <!--本项目模块依赖-->
+        
+        <dependency>
+            <groupId>com.scratch.ml</groupId>
+            <artifactId>Common</artifactId>
+        </dependency>
+
+
+        <!-- 第三方jar包-->
+
+        <!-- scala数值计算库 -->
         <dependency>
             <groupId>org.scalanlp</groupId>
             <artifactId>breeze_2.11</artifactId>
-            <version>0.12</version>
         </dependency>
 
+        <!-- scala绘图库 -->
         <dependency>
             <groupId>org.scalanlp</groupId>
             <artifactId>breeze-viz_2.11</artifactId>
-            <version>0.12</version>
         </dependency>
 
     </dependencies>

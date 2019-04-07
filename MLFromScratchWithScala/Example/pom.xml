@@ -9,26 +9,19 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Common</artifactId>
+    <artifactId>Example</artifactId>
 
     <dependencies>
+        <!--本项目模块依赖-->
 
-        <!-- 日志API接口组件 -->
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
+            <groupId>com.scratch.ml</groupId>
+            <artifactId>Common</artifactId>
         </dependency>
 
-        <!-- log4j日志组件 -->
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-        </dependency>
-
-        <!-- log4j日志组件的日志门面适配器 -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
+            <groupId>com.scratch.ml</groupId>
+            <artifactId>Supervised-Learning</artifactId>
         </dependency>
 
         <!-- 第三方jar包-->
@@ -44,7 +37,6 @@
             <groupId>org.scalanlp</groupId>
             <artifactId>breeze-viz_2.11</artifactId>
         </dependency>
-
 
     </dependencies>
 
