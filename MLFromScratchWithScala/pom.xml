@@ -12,6 +12,7 @@
         <module>SupervisedLearning</module>
         <module>Common</module>
         <module>Example</module>
+        <module>DeepLearning</module>
     </modules>
 
     <properties>

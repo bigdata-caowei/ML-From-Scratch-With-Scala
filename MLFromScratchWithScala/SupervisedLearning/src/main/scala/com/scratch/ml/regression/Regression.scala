@@ -2,7 +2,7 @@ package com.scratch.ml.regression
 
 import breeze.linalg.{DenseMatrix, dim, sum}
 import breeze.stats.distributions.Uniform
-import com.scratch.ml.util.Loggable
+import com.scratch.ml.model.debug.Loggable
 
 import scala.collection.mutable.ArrayBuffer
 

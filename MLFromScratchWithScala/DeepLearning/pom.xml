@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Supervised-Learning</artifactId>
+    <artifactId>DeepLearning</artifactId>
 
     <dependencies>
         <!--本项目模块依赖-->

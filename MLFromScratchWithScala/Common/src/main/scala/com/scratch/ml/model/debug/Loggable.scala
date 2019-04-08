@@ -1,4 +1,4 @@
-package com.scratch.ml.util
+package com.scratch.ml.model.debug
 
 import org.slf4j.LoggerFactory
 
