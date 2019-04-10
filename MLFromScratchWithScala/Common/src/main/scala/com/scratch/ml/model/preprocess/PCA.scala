@@ -7,7 +7,7 @@ import breeze.linalg.{DenseMatrix, sum, svd}
   * 当参数过多，导致训练缓慢，内存消耗过大时才是使用PCA的时机
   * Andew NG
   */
-class PCA {
+object PCA {
 
   def transform(X: DenseMatrix[Double], k: Int): (DenseMatrix[Double], Double) = {
     val covarianceMatrix = X.t * X * (1.0 / X.rows)
