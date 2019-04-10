@@ -13,6 +13,7 @@
         <module>Common</module>
         <module>Example</module>
         <module>DeepLearning</module>
+        <module>UnsupervisedLearning</module>
     </modules>
 
     <properties>
@@ -39,6 +40,13 @@
                 <artifactId>Supervised-Learning</artifactId>
                 <version>${project.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.scratch.ml</groupId>
+                <artifactId>UnsupervisedLearning</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
 
             <!-- 第三方jar包-->
 

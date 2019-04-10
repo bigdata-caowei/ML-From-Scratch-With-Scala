@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Example</artifactId>
+    <artifactId>UnsupervisedLearning</artifactId>
 
     <dependencies>
         <!--本项目模块依赖-->
@@ -17,16 +17,6 @@
         <dependency>
             <groupId>com.scratch.ml</groupId>
             <artifactId>Common</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.scratch.ml</groupId>
-            <artifactId>Supervised-Learning</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.scratch.ml</groupId>
-            <artifactId>UnsupervisedLearning</artifactId>
         </dependency>
 
 
