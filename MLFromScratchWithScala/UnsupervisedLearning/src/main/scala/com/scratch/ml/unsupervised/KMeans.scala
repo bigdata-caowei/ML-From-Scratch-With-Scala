@@ -8,15 +8,6 @@ import com.scratch.ml.model.math.MathHelper
 
 import scala.collection.mutable.ArrayBuffer
 
-object a {
-  def main(args: Array[String]): Unit = {
-    val kMeans: KMeans = new KMeans(3)
-    val X = DenseMatrix((0.0, 0.0), (0.0, 5.0), (5.0, 0.0), (4.0, 0.0), (1.0, 4.0), (5.0, 1.0), (1.0, 1.0))
-    kMeans.predict(X)
-
-  }
-}
-
 class KMeans(val k: Int = 2, val maxIterations: Int = 500) extends Loggable {
 
   var centroids: DenseMatrix[Double] = _
